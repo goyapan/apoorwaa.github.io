@@ -27,20 +27,20 @@
   if((score >=0) && (score <=18))
   {
 		totScore= "0-18";
-		severityStatus = "Mild"
+		severityStatus = "Limited"
   }
   else if((score>=19) && (score <=36))
   {
 		totScore= "19-36";
-		severityStatus = "Moderate"
+		severityStatus = "Average"
   }
   else{
 	    totScore= "37-54";
-		severityStatus = "Severe";
+		severityStatus = "More than average";
   }
   
-  var demo = document.getElementById("result");
-  demo.innerHTML = '<br><br><p><center><font size = "5"> Your Dementia severity score is in between ' + totScore + '</font></center></p><p><center><font size = "5">Severity status is ' + severityStatus + '</font></center></p><footer class="footer p-5"><div class="container"><div class="row"><div class="col-md-3"><br><br><br><br><h3>Disclaimer</h3><h4>Author:</h4></div><div class="col-md-3"><br><br><br><br><p>Dr. Christopher M Clark, Alzheimer’s Disease Core Center <br> Department of Neurology, University of Pennsylvania, Philadelphia, Pennsylvania, USA</p></div></div></div> <center><a class="btn btn-success" href = "index.html">Close</a></center></footer>'; 
+   var demo = document.getElementById("result");
+  demo.innerHTML = '<br><br><p><center><font size = "5"> Your Financial literacy score is in between ' + totScore + '</font></center></p><p><center><font size = "5">Based on the survey score your knowledge to banking product is ' + severityStatus + '.</font></center></p><p><center><a class="btn btn-success" data-toggle="modal" data-target="#submitModal") >Click if you wish to Open Saving Account</a></center></p><br><p><center><font size = "2">Ongoing savings interest rates will be applicable on savings account. <br>Kindly upload relevant documents and upon verification avail special interest rates.</center></p><footer class="footer p-5"><div class="container"><div class="row"><div class="col-md-3"><br><h7>Disclaimer:<br>Author of the survey is<br>Arun Kumar <br>Chief Manager, Fin GPT </h7></div><div class="col-md-3"><br><br><p><br> </p></div></div></div></footer>'; 
  }
   
   </script>
@@ -73,17 +73,11 @@
       <li data-target="#myCarousel" data-slide-to="6"></li>
 	    <li data-target="#myCarousel" data-slide-to="7"></li>
       <li data-target="#myCarousel" data-slide-to="8"></li>
-	    <li data-target="#myCarousel" data-slide-to="9"></li>
-      <li data-target="#myCarousel" data-slide-to="10"></li>
-	    <li data-target="#myCarousel" data-slide-to="11"></li>
-		<li data-target="#myCarousel" data-slide-to="12"></li>
-		<li data-target="#myCarousel" data-slide-to="13"></li>
     </ol>
-
-    <!-- Wrapper for slides -->
+ <!-- Wrapper for slides -->
 	<br>
 	<br>
-	 <h1 style="color:#90EE90">   <img src="assets/img/Logo.jpg" class="right-block" align = "center" height = "auto" width="60px">&nbsp;&nbsp;<b>FIN BANK</b></h1>
+	 <h1 style="color:#90EE90">   <img src="assets/img/FinGPT_Logo.jpg" class="right-block" align = "center" height = "auto" width="200px">&nbsp;&nbsp;<b></b></h1>
     <div class="carousel-inner" style="font-family:Verdana">
       <div class="item active">
         
@@ -98,8 +92,8 @@
 	  <br>
 	  <img src="assets/img/D1.jpg" class="center-block" height = "auto" width="300px">
 	  </div>
-	  <p><center><font size="6">DEMENTIA SURVEY RATING SCALE (DSRS)</font></center></p>
-	  <p><center><font size="5">Please select one option per section,and be sure to answer all questions.</font></center></p>
+	  <p><center><font size="6">Financial literacy Survey</font></center></p>
+	  <p><center><font size="5">Please select applicable options and be sure to answer all questions.</font></center></p>
 	  </div>
 	
 
@@ -113,45 +107,37 @@
 
 	  
 		  <div class="form-check">
-	  <p><b>&nbsp;MEMORY</b></p>
+	  <p><b>&nbsp;How Old are you?</b></p>
 	  <br>
 	  
 	  
 	  <div class="mb-3 form-check">
   <input class="form-check-input" type="radio" name="D1" id="R1" value="0">
-  <label class="form-check-label" for="R1">Normal memory.</label>
+  <label class="form-check-label" for="R1">Under 18</label>
   </div>
 
 	  <div class="mb-3 form-check"> 
   <input class="form-check-input" type="radio" name="D1" id="R2" value="1" >
-  <label class="form-check-label" for="R2">Occasionally forgets things that they were told recently.Does not cause many problems.</label>
+  <label class="form-check-label" for="R2">18-25</label>
   </div>
 
 	  <div class="mb-3 form-check">
   <input class="form-check-input" type="radio" name="D1" id="R3" value="2" >
-  <label class="form-check-label" for="R3">Mild consistent forgetfulness. Remembers recent events but often forgets parts.</label>
+  <label class="form-check-label" for="R3">26-35</label>
 </div>
 
 	  <div class="mb-3 form-check">  
   <input class="form-check-input" type="radio" name="D1" id="R4" value="3" >
-  <label class="form-check-label" for="R4">Moderate memory loss. Worse for recent events. May not remember something you just told them. Causes problems with everyday activities.</label>
+  <label class="form-check-label" for="R4">36-45</label>
 </div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D1" id="R5" value="4" >
-  <label class="form-check-label" for="R5">Substantial memory loss. Quickly forgets recent or newly-learned things. Can only remember things that they have known for a long time.</label>
-</div>
-
 	  <div class="mb-3 form-check">  
-  <input class="form-check-input" type="radio" name="D1" id="R6" value="5" >
-  <label class="form-check-label" for="R6">Does not remember basic facts like the day of the week, when last meal was eaten or what the next meal will be.</label>
+  <input class="form-check-input" type="radio" name="D1" id="R4" value="3" >
+  <label class="form-check-label" for="R4">46-55</label>
 </div>
-
-	  <div class="mb-3 form-check">	 
-  <input class="form-check-input" type="radio" name="D1" id="R7" value="6" >
-  <label class="form-check-label" for="R7">Does not remember even the most basic things. </label>
+	  <div class="mb-3 form-check">  
+  <input class="form-check-input" type="radio" name="D1" id="R4" value="3" >
+  <label class="form-check-label" for="R4">56-above</label>
 </div>
-
 </div>
 </div>
 		
@@ -166,45 +152,19 @@
 	  <br>
 	  
 	  	  <div class="form-check">
-	  <p><b>&nbsp;SPEECH AND LANGUAGE</b></p>
+	  <p><b>&nbsp;Do you have a budget for your expenses?</b></p>
 	  <br>
 	  
 	  
 	  <div class="mb-3 form-check">  
   <input class="form-check-input" type="radio" name="D2" id="R8" value="0" >
-  <label class="form-check-label" for="R8">Normal ability to talk and to understand others.</label>
+  <label class="form-check-label" for="R8">Yes</label>
 </div>
 
 	  <div class="mb-3 form-check">
   <input class="form-check-input" type="radio" name="D2" id="R9" value="1" >
-  <label class="form-check-label" for="R9">Sometimes cannot find a word, but able to carry on conversations.</label>
+  <label class="form-check-label" for="R9">No</label>
 </div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D2" id="R10" value="2" >
-  <label class="form-check-label" for="R10">Often forgets words. May use the wrong word in its place. Some trouble expressing thoughts and giving answers.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D2" id="R11" value="3" >
-  <label class="form-check-label" for="R11">Usually answers questions using sentences but rarely starts a conversation.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D2" id="R12" value="4" >
-  <label class="form-check-label" for="R12">Answers questions, but responses are often hard to understand or don't make sense. Usually able to follow simple instructions.</label>
-</div>
-
-	  <div class="mb-3 form-check">  
-  <input class="form-check-input" type="radio" name="D2" id="R13" value="5" >
-  <label class="form-check-label" for="R13">Speech often does not make sense. Can not answer questions or follow instructions.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D2" id="R14" value= "6" >
-  <label class="form-check-label" for="R14">Does not respond most of the time. </label>
-</div>
-
 </div>
 	  
 	  
@@ -221,47 +181,28 @@
 	  <br>
 	  
 		   	  <div class="form-check">
-	  <p><b>&nbsp;RECOGNITION OF FAMILY MEMBERS</b></p>
+	  <p><b>&nbsp;Which of the following are considered assets?</b></p>
 	  <br>
 	  
 	  
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D3" id="R15" value="0" >
-  <label class="form-check-label" for="R15">Normal - recognizes people and generally knows who they are.</label>
+  <input class="form-check-input" type="checkbox" name="D3" id="R15" value="0" >
+  <label class="form-check-label" for="R15">Savings account</label>
 </div>
 
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D3" id="R16" value="1" >
-  <label class="form-check-label" for="R16">Usually recognizes grandchildren, cousins or relatives who are not seen frequently
-but may not recall how they are related.</label>
+  <input class="form-check-input" type="checkbox" name="D3" id="R16" value="1" >
+  <label class="form-check-label" for="R16">Stocks</label>
 </div>
 
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D3" id="R17" value="2" >
-  <label class="form-check-label" for="R17">Usually does not recognize family members who are not seen frequently. Is often
-confused about how family members such as<br> grandchildren, nieces, or nephews are
-related to them.</label>
+  <input class="form-check-input" type="checkbox" name="D3" id="R17" value="2" >
+  <label class="form-check-label" for="R17">Real estate</label>
 </div>
-
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D3" id="R18" value="3" >
-  <label class="form-check-label" for="R18">Sometimes does not recognize close family members or others who they see
-frequently. May not recognize their children, brothers,<br> or sisters who are not seen on
-a regular basis.</label>
+  <input class="form-check-input" type="checkbox" name="D3" id="R17" value="2" >
+  <label class="form-check-label" for="R17">Jewellery</label>
 </div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D3" id="R19" value="4" >
-  <label class="form-check-label" for="R19">Frequently does not recognize spouse or caregiver.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-	  
-  <input class="form-check-input" type="radio" name="D3" id="R20" value="5" >
-  <label class="form-check-label" for="R20">No recognition or awareness of the presence of others.</label>
-</div>
-
-
 </div>
  </div>
 	  
@@ -274,35 +215,34 @@ a regular basis.</label>
 	  <br>
 	  
 		   	  <div class="form-check">
-	  <p><b>&nbsp;ORIENTATION TO TIME</b></p>
+	  <p><b>&nbsp;What are common sources of income?</b></p>
 	  <br>
 	  
 	  
 	  <div class="mb-3 form-check">	
-  <input class="form-check-input" type="radio" name="D4" id="R21" value="0" >
-  <label class="form-check-label" for="R21">Normal awareness of time of day and day of week.</label>
+  <input class="form-check-input" type="checkbox" name="D4" id="R21" value="0" >
+  <label class="form-check-label" for="R21">Salary</label>
 </div>
 
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D4" id="R22" value="1" >
-  <label class="form-check-label" for="R22">Some confusion about what time it is or what day of the week, but not severe
-enough to interfere with everyday activities.</label>
+  <input class="form-check-input" type="checkbox" name="D4" id="R22" value="1" >
+  <label class="form-check-label" for="R22">Investments</label>
 </div>
 
 	  <div class="mb-3 form-check">
 	 
-  <input class="form-check-input" type="radio" name="D4" id="R23" value="2" >
-  <label class="form-check-label" for="R23">Frequently confused about time of day.</label>
+  <input class="form-check-input" type="checkbox" name="D4" id="R23" value="2" >
+  <label class="form-check-label" for="R23">Side hustle</label>
 </div>
 
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D4" id="R24" value="3" >
-  <label class="form-check-label" for="R24">Almost always confused about the time of day.</label>
+  <input class="form-check-input" type="checkbox" name="D4" id="R24" value="3" >
+  <label class="form-check-label" for="R24">Inheritance</label>
 </div>
 
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D4" id="R25" value="4" >
-  <label class="form-check-label" for="R25">Seems completely unaware of time. </label>
+  <input class="form-check-input" type="checkbox" name="D4" id="R25" value="4" >
+  <label class="form-check-label" for="R25">None of the above</label>
 </div>
 
 
@@ -318,37 +258,19 @@ enough to interfere with everyday activities.</label>
 	  <br>
 	  
 		   	  <div class="form-check">
-	  <p><b>&nbsp;ORIENTATION TO PLACE</b></p>
+	  <p><b>&nbsp;Do you track your expenses regularly?</b></p>
 	  <br>
 	  
 	  
 	  <div class="mb-3 form-check">
   <input class="form-check-input" type="radio" name="D5" id="R26" value="0" >
-  <label class="form-check-label" for="R26">Normal awareness of where they are even in new places.</label>
+  <label class="form-check-label" for="R26">Yes</label>
 </div>
 
 	  <div class="mb-3 form-check">
   <input class="form-check-input" type="radio" name="D5" id="R27" value="1" >
-  <label class="form-check-label" for="R27">Sometimes disoriented in new places.</label>
+  <label class="form-check-label" for="R27">No</label>
 </div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D5" id="R28" value="2" >
-  <label class="form-check-label" for="R28">Frequently disoriented in new places.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D5" id="R29" value="3" >
-  <label class="form-check-label" for="R29">Usually disoriented, even in familiar places. May forget that they are already at
-home.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D5" id="R30" value="4" >
-  <label class="form-check-label" for="R30">Almost always confused about place. </label>
-</div>
-
-
 </div>
 </div>
 
@@ -360,36 +282,29 @@ home.</label>
 	  <br>
 	  
 		   	  <div class="form-check">
-	  <p><b>&nbsp;ABILITY TO MAKE DECISIONS</b></p>
+	  <p><b>&nbsp;How confident do you feel about managing your personal finances?</b></p>
 	  <br>
 	  
 	  
 	  <div class="mb-3 form-check">
   <input class="form-check-input" type="radio" name="D6" id="R31" value="0" >
-  <label class="form-check-label" for="R31">Normal - as able to make decisions as before.</label>
+  <label class="form-check-label" for="R31">Very confident</label>
 </div>
 
 	  <div class="mb-3 form-check">
   <input class="form-check-input" type="radio" name="D6" id="R32" value="1" >
-  <label class="form-check-label" for="R32">Only some difficulty making decisions that arise in day-to-day life.</label>
+  <label class="form-check-label" for="R32">Somewhat confident</label>
 </div>
 
 	  <div class="mb-3 form-check">
   <input class="form-check-input" type="radio" name="D6" id="R33" value="2" >
-  <label class="form-check-label" for="R33">Moderate difficulty. Gets confused when things get complicated or plans change.</label>
+  <label class="form-check-label" for="R33">Not very confident</label>
 </div>
 
 	  <div class="mb-3 form-check">
   <input class="form-check-input" type="radio" name="D6" id="R34" value="3" >
-  <label class="form-check-label" for="R34">Rarely makes any important decisions. Gets confused easily.</label>
+  <label class="form-check-label" for="R34">Not at all confident</label>
 </div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D6" id="R35" value="4" >
-  <label class="form-check-label" for="R35">Not able to understand what is happening most of the time.</label>
-</div>
-
-
 </div>
 		   </div>	
 
@@ -400,47 +315,36 @@ home.</label>
 	  <br>
 	  
 		   	  <div class="form-check">
-	  <p><b>&nbsp;SOCIAL AND COMMUNITY ACTIVITY</b></p>
+	  <p><b>&nbsp;What are the benefits of having an emergency fund?</b></p>
 	  <br>
 	  
 	  
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D7" id="R36" value="0" >
-  <label class="form-check-label" for="R36">Normal - acts the same with people as before.</label>
+  <input class="form-check-input" type="checkbox" name="D7" id="R36" value="0" >
+  <label class="form-check-label" for="R36">Peace of mind</label>
 </div>
 
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D7" id="R37" value="1" >
-  <label class="form-check-label" for="R37">Only mild problems that are not really important, but clearly acts differently from
-previous years.</label>
+  <input class="form-check-input" type="checkbox" name="D7" id="R37" value="1" >
+  <label class="form-check-label" for="R37">Financial security</label>
 </div>
 
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D7" id="R38" value="2" >
-  <label class="form-check-label" for="R38">Can still take part in community activities without help. May appear normal to people
-who don't know them.</label>
+  <input class="form-check-input" type="checkbox" name="D7" id="R38" value="2" >
+  <label class="form-check-label" for="R38">Cover unexpected expenses</label>
 </div>
 
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D7" id="R39" value="3" >
-  <label class="form-check-label" for="R39">Often has trouble dealing with people outside the home without help from caregiver.
-Usually can participate in quiet home activities<br> with friends. The problem is clear to
-anyone who sees them.</label>
+  <input class="form-check-input" type="checkbox" name="D7" id="R39" value="3" >
+  <label class="form-check-label" for="R39">Avoid debt</label>
 </div>
 
 	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D7" id="R40" value="4" >
-  <label class="form-check-label" for="R40">No longer takes part in any real way in activities at home involving other people. Can
-only deal with the primary caregiver. </label>
+  <input class="form-check-input" type="checkbox" name="D7" id="R40" value="4" >
+  <label class="form-check-label" for="R40">All of the above</label>
+</div>
 </div>
 
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D7" id="R41" value="5" >
-  <label class="form-check-label" for="R41">Little or no response even to primary caregiver. </label>
-</div>
-
-</div>
 		   
 		   
 		   </div>
@@ -450,222 +354,6 @@ only deal with the primary caregiver. </label>
 	  <br>
 	  <br>
 	  <br>
-	  
-			   	  <div class="form-check">
-	  <p><b>&nbsp;HOME ACTIVITIES AND RESPONSIBILITIES</b></p>
-	  <br>
-	  
-	  
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D8" id="R42" value="0" >
-  <label class="form-check-label" for="R42">Normal. No decline in ability to do things around the house.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D8" id="R43" value="1" >
-  <label class="form-check-label" for="R43">Some problems with home activities. May have more trouble with money
-management (paying bills) and fixing things.<br> Can still go to a store, cook or clean.
-Still watches TV or reads a newspaper with interest and understanding.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D8" id="R44" value="2" >
-  <label class="form-check-label" for="R44">Makes mistakes with easy tasks like going to a store, cooking or cleaning. Losing
-interest in the newspaper, TV or radio.<br> Often can't follow a long conversation on a
-single topic.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D8" id="R45" value="3" >
-  <label class="form-check-label" for="R45">Not able to shop, cook or clean without a lot of help. Does not understand the
-newspaper or the TV. Cannot follow a conversation.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D8" id="R46" value="4" >
-  <label class="form-check-label" for="R46">No longer does any home-based activities.  </label>
-</div>
-
-
-</div>
-		   </div>  
-	 
-
-	       <div class="item">
-		   	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  
-		   	  <div class="form-check">
-	  <p><b>&nbsp;PERSONAL CARE - CLEANLINESS</b></p>
-	  <br>
-	  
-	  
-	  <div class="mb-3 form-check"> 
-  <input class="form-check-input" type="radio" name="D9" id="R47" value="0" >
-
-  <label class="form-check-label" for="R47">Normal. Takes care of self as well as they used to.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D9" id="R48" value="1" >
-  <label class="form-check-label" for="R48">Sometimes forgets to wash, shave, comb hair, or may dress in wrong type of
-clothes. Not as neat as they used to be.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D9" id="R49" value="2" >
-  <label class="form-check-label" for="R49">Requires help with dressing, washing and personal grooming.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D9" id="R50" value="3" >
-  <label class="form-check-label" for="R50">Totally dependent on help for personal care.</label>
-</div>
-
-
-</div>
-		   </div>
-	 
-	 	       <div class="item">
-			   	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  
-			   <div class="form-check">
-			   	  <p><b>&nbsp;EATING</b></p>
-	  <br>
-	  
-	  
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D10" id="R51" value="0" >
-  <label class="form-check-label" for="R51">Normal, does not need help in eating food that is served to them.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D10" id="R52" value="1" >
-  <label class="form-check-label" for="R52">May need help cutting food or have trouble with some foods, but basically able to eat
-by themselves.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D10" id="R53" value="2" >
-  <label class="form-check-label" for="R53">Generally able to feed themselves but may require some help. May lose interest
-during the meal.</label>
-</div>
-
-	  <div class="mb-3 form-check"> 
-  <input class="form-check-input" type="radio" name="D10" id="R54" value="3" >
-  <label class="form-check-label" for="R54">Needs to be fed. May have trouble swallowing. </label>
-</div>
-
-
-</div>
-		   </div>
-
-
-	       <div class="item">
-		   	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  
-		   	  <div class="form-check">
-	  <p><b>&nbsp;CONTROL OF URINATION AND BOWELS</b></p>
-	  <br>
-	  
-	  
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D11" id="R55" value="0" >
-  <label class="form-check-label" for="R55">Normal - does not have problems controlling urination or bowels except for physical
-problems.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D11" id="R56" value="1" >
-  <label class="form-check-label" for="R56">Rarely fails to control urination (generally less than one accident per month).</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D11" id="R57" value="2" >
-  <label class="form-check-label" for="R57">Occasional failure to control urination (about once a week or less).</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D11" id="R58" value="3" >
-  <label class="form-check-label" for="R58">Frequently fails to control urination (more than once a week).</label>
-</div>
-
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D11" id="R59" value="4" >
-  <label class="form-check-label" for="R59">Generally fails to control urination and frequently can not control bowels. </label>
-</div>
-
-</div>
-		   </div>	 
-	
-
-<div class="item">
-	  <br>
-	  <br>
-	  <br>
-	  <br>
-	  
-	  <div class="form-check">
-	  <p><b>&nbsp;ABILITY TO GET FROM PLACE TO PLACE</b></p>
-	  <br>
-	  
-	  
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D12" id="R60" value="0" >
-  <label class="form-check-label" for="R60">Normal, able to get around on their own. (May have physical problems that require a
-cane or walker).</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D12" id="R61" value="1" >
-  <label class="form-check-label" for="R61">Sometimes gets confused when driving or taking public transportation, especially in
-new places. Able to walk places alone.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D12" id="R62" value="2" >
-  <label class="form-check-label" for="R62">Cannot drive or take public transportation alone, even in familiar places. Can walk
-alone outside for short distances.<br> Might get lost if walking too far from home.</label>
-</div>
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D12" id="R63" value="3" >
-  <label class="form-check-label" for="R63">Cannot be left outside alone. Can get around the house without getting lost or
-confused.</label>
-</div>
-
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D12" id="R64" value="3" >
-  <label class="form-check-label" for="R64">Gets confused and needs help finding their way around the house. </label>
-</div>
-
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D12" id="R65" value="4" >
-  <label class="form-check-label" for="R65">Almost always in a bed or chair. May be able to walk a few steps with help, but lacks
-sense of direction. </label>
-</div>
-
-
-	  <div class="mb-3 form-check">
-  <input class="form-check-input" type="radio" name="D12" id="R66" value="5" >
-  <label class="form-check-label" for="R66">Always in bed. Unable to sit or stand. </label>
-</div>
-</div>
-</div>
-	
-
-	
 <div class="item">
 <br>
 <br>
